@@ -65,6 +65,22 @@ Example, enter “fa fa-plus” in one of the button icon fields.
 You can add an input icon in front of a field by adding an HTML tag into the “Prefix” field. <I class=”fa fa-phone”></i>.
 ![](images/bs_prefix_suffix.png)
 
+#### Custom CSS
+In certian scenarios where form needs be customized to look certian way. Custom CSS can be added to the form by defining CSS in HTML Elemennt component and refer back the CSS class in other advanced components.
+
+Default CSS classes from Boorstrap can be overriden in Html Element compoenent. Also mark the component as hidden as it not be visible in the form.
+
+![](images/customCssClass.jpg)
+
+[picture]
+
+Customm CSS classes can also be defined in the HTML element component. Reference to this class can be provided in the Custom CSS class property of the advanced components. Like the following example CSS class {replace name} defined in the HTML element component can be used in Text Feild Advanced compoenent to make the text in text field bold. 
+
+[picture]
+
+It is recomended to adhere to BC govt style guidelines available here
+
+
 
 ***
 [Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
