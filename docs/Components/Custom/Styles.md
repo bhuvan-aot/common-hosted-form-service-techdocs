@@ -4,7 +4,7 @@
 ## Working Examples
 
 > Try a working example<br>
-> [View example](https://submit.digital.gov.bc.ca/app/form/submit?f=6ff5ba7d-ed8b-433e-a063-162f56627586)
+> [View example](https://submit.digital.gov.bc.ca/app/form/submit?f=1a795260-d9b5-44dd-89a8-52d769284df2)
 
 > Download this example file and [import](Importing-and-exporting-form-designs) it into your design<br>
 > [example_styles_schema.json](../examples/example_styles_schema.json){:download="example_styles_schema.json"}
@@ -65,22 +65,19 @@ Example, enter “fa fa-plus” in one of the button icon fields.
 You can add an input icon in front of a field by adding an HTML tag into the “Prefix” field. <I class=”fa fa-phone”></i>.
 ![](images/bs_prefix_suffix.png)
 
-#### Custom CSS
-In certian scenarios where form needs be customized to look certian way. Custom CSS can be added to the form by defining CSS in HTML Elemennt component and refer back the CSS class in other advanced components.
+#### Defining Custom CSS
+Certain requirements need customizing the form's appearance beyond the capabilities of standard form components. To achieve this, users can integrate custom CSS into the form by defining a CSS class within the HTML Element component and subsequently referencing this class in other advanced components.
 
-Default CSS classes from Boorstrap can be overriden in Html Element compoenent. Also mark the component as hidden as it not be visible in the form.
+While making these changes, please refer to [Design Guidelines for the B.C. Visual Identity Program](https://www2.gov.bc.ca/gov/content/governments/services-for-government/policies-procedures/bc-visual-identity/design-guidelines#stationery)  
 
-![](images/customCssClass.jpg)
+By default CHEFS implements  [bootstrap compoonent CSS.](https://getbootstrap.com/docs/4.6/getting-started/introduction/) You can override these CSS classes by creating a more specific CSS rule in Html Element compoenent. Following example overrides .nav-tabs properties to make active tab background from white to grey, this will be applied to all the tabs component across the form. You can also use the !important declaration to give a CSS rule more weight, making it override other conflicting styles. However, it's generally recommended to use this approach sparingly as it can make your CSS harder to maintain and troubleshoot.
 
-[picture]
+![](images/customCssClass1.jpg)
 
-Customm CSS classes can also be defined in the HTML element component. Reference to this class can be provided in the Custom CSS class property of the advanced components. Like the following example CSS class {replace name} defined in the HTML element component can be used in Text Feild Advanced compoenent to make the text in text field bold. 
+To apply styles to specific components, you can define a custom CSS class. For instance, if you wish to italicize and bolden the text within an input field, you can achieve this by incorporating the following CSS code into the HTML Element component. Then, reference this class within the input text field component, as illustrated in the screenshots below.
 
-[picture]
-
-It is recomended to adhere to BC govt style guidelines available here
-
-
+![](images/customCssClass2.jpg)
+![](images/customCssClass3.jpg)
 
 ***
 [Terms of Use](Terms-of-Use) | [Privacy](Privacy) | [Security](Security) | [Service Agreement](Service-Agreement) | [Accessibility](Accessibility)
